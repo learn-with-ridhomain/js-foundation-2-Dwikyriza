@@ -1,0 +1,3 @@
+/*
+Buat sebuah fungsi yang mempunyai input number dan mereturn true jika angka tersebut adalah angka prima
+*/
