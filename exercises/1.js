@@ -5,3 +5,14 @@ Parameter: 1 number, 1 string.
 Output: 1 string
 Contoh: solution(2, "abc") hasilnya menjadi "abcabc"
 */
+
+const solution = (num, str, output = "") => {
+    if (num === 0) return output
+    return solution(num - 1 , str, output = output + str)
+}
+
+console.log(solution(3, "berak"))
+
+module.exports = {
+    solution
+  };
