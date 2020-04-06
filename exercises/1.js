@@ -11,7 +11,7 @@ const solution = (num, str, output = "") => {
     return solution(num - 1 , str, output = output + str)
 }
 
-console.log(solution(3, "berak"))
+// console.log(solution(3, "berak"))
 
 module.exports = {
     solution
