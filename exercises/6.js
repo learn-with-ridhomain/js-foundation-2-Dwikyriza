@@ -4,7 +4,8 @@ const solution = (num, i = 2, output = 0) => {
     if (i >= num) return output
     if (num % i === 0) return solution(num, i + 1, output = output + i)
     if (num % i !== 0) return solution(num, i + 1, output)
-}
+} 
+
 
 module.exports = {
     solution
