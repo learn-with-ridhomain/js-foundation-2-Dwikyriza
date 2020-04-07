@@ -9,7 +9,7 @@ Contoh: solution("abc", "a") hasilnya menjadi 1
 const solution = (str1, str2, i = 0, output = 0) => {
     if (i >= str1.length) return output
     if (str2.includes(str1[i].toLowerCase())) return solution(str1, str2, i + 1, output = output + 1)
-    if (!str2.includes(str1[i].toLowerCase())) return solution(str1, str2, i + 1, output = output + 0)
+    if (!str2.includes(str1[i].toLowerCase())) return solution(str1, str2, i + 1, output = output)
     // return solution(str1, str2, i + 1, output = output + 1)
     // console.log(output)
 }
