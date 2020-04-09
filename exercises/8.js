@@ -8,7 +8,7 @@
 
 const solution = (str, i = 0, output = "") => {
     if (i === str.length) return output
-    if (i === 0 || i % 2 === 0) return solution(str, i + 1, output = output + str[i])
+    if (i === 0 || i % 2 === 0) output = output + str[i]
     return solution (str, i + 1, output)
 }
 
